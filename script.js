@@ -7,8 +7,10 @@ function guessingGame() {
 
     if (userGuess > compGuess) {
         feedback.innerHTML = "too high";
+        feedback.style.backgroundColor = 'rgba(310, 0, 0, 0.6)';
     } else if (userGuess < compGuess) {
         feedback.innerHTML = '<p>too low</p>';
+        feedback.style.backgroundColor = 'rgba(0, 310, 0, 0.5)';
     } else {
         feedback.innerHTML = 'YOU GOT IT'
     }
